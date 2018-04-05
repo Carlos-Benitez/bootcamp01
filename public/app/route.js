@@ -66,6 +66,36 @@
 			templateUrl: 'app/patrocinador/patrocinador-form.html', 
 			controller: 'patrocinadorEditController',
 			controllerAs: 'vm',
+        })
+        
+     
+		// usuarios state
+        .state('usuarios', {
+            url: '/usuarios',
+            templateUrl: 'app/usuarios/usuarios.html',
+            controller: 'usuariosController',
+            controllerAs: 'vm',
+            ncyBreadcrumb: {
+                label: 'Home'
+            }
+        })
+        .state('form-usuario-create', {
+            url: '/usuarios/create',
+            templateUrl: 'app/usuarios/usuario-form.html',
+            controller: 'usuarioController',
+            controllerAs: 'vm',
+            ncyBreadcrumb: {
+                label: 'Home'
+            }
+        })
+        .state('form-usuario-edit', {
+            url: "/usuarios/update/:id",
+            templateUrl: "app/usuarios/usuario-form.html",
+            controller:"usuarioController",
+            controllerAs: "vm",
+            ncyBreadcrumb: {
+                label: 'Home'
+            }
 		})
 	}
 }())

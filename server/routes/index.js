@@ -1,5 +1,6 @@
 var eventos = require('../controllers/eventos');
 var patrocinador = require('../controllers/patrocinadores');
+var usuarios = require('../controllers/usuarios');
 
 // Todas las rutas de la aplicacion deben ser definidos en este archivo
 module.exports = function(router) {
@@ -19,6 +20,12 @@ module.exports = function(router) {
     //Workshops
 
     //Otros
+     // Usuarios
+     router.get('/usuarios', usuarios.index);
+     router.get('/usuarios/:id', usuarios.show);
+     router.post('/usuarios', usuarios.create);
+     router.put('/usuarios/:id', usuarios.update);
+     router.delete('/usuarios/:id', usuarios.delete);
 
     return router;
 };

@@ -27,6 +27,10 @@
 					endpoint = config.serviceUrl + table
 					break;
 
+				case 'usuarios':
+					endpoint = config.serviceUrl + table
+					break;
+
 				default: ''
 			}
 
@@ -50,6 +54,9 @@
 					break;
 				case 'premios':
 					endpoint = config.serviceUrl + table;
+					break;
+				case 'usuarios':
+					endpoint = config.serviceUrl + table
 					break;
 
 				default: ''

@@ -1,0 +1,48 @@
+<div id="form-bussines_plan">
+    <h2>Registro de Usuario</h2>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="control-label" for="nombre">Nombre</label>
+                <input type="text" class="form-control" ng-model="vm.usuario.nombre" id="nombre" name="nombre"  />
+            </div>       
+            <div class="form-group">
+                <label class="control-label" for="descripcion">Email</label>
+                <input type="text" class="form-control" ng-model="vm.usuario.email" id="email" name="email" />
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="direccion">Clave</label>
+                <input type="text" class="form-control" ng-model="vm.usuario.clave" id="clave" name="clave"/>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="direccion">Nivel</label>
+                <input type="text" class="form-control" ng-model="vm.usuario.nivel" id="nivel" name="nivel"/>
+            </div> 
+            <div class="form-group">
+                <label class="control-label" for="imagen">Imagen</label>
+                <input type="text" class="form-control" ng-model="vm.usuario.imagenUrl" id="imagen" name="imagen"/>
+            </div>
+            <!-- <div class="form-group">
+                <label for="nivel">Nivel</label>
+                  <select  class="form-control"  name="nivel" id="nivel">
+                    <option ng-model="vm.usuario.nivel" >Usuario</option>
+                    <option ng-model="vm.usuario.nivel">Administrador</option>
+                   
+                  </select>
+            </div>
+            
+            <div class="form-group">
+                <label class="control-label" for="imagen" >Seleccione una imagen</label>
+                <input type="file" class="form-control" ng-model="vm.usuario.imagenUrl" id="imagen" name="imagen">
+                <img src="https://k39.kn3.net/taringa/6/8/7/7/7/3/1/agushhhhh/47F.jpg?4345" alt="foto" width="100px" style="padding:15px" >   
+            </div> -->
+             
+        </div>
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-primary" type="button" ng-click="vm.submitusuario()">Guardar</button>
+        <button class="btn btn-default" type="button" ng-click="vm.cancelar()">Cancelar</button>
+    </div>
+</div>
